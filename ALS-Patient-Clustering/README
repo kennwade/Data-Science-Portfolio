@@ -1,0 +1,26 @@
+# Project Title: Clustering ALS Patient Data
+
+## Overview
+This project involves clustering ALS patient data to identify distinct patterns in disease progression. Using K-means clustering and PCA for visualization, the goal is to gain insights into the characteristics of different patient groups.
+
+## Dataset Description
+The dataset contains anonymized data on ALS patients, including various medical metrics such as age and ALS Functional Rating Scale (ALSFRS) scores.
+
+- **Source**: ALS dataset
+
+## Methodology
+1. **Data Cleaning**: Removed irrelevant data and scaled the features using StandardScaler.
+2. **Clustering**: Applied K-means clustering to identify distinct clusters.
+3. **PCA Transformation**: Performed PCA to visualize clusters in a 2D space.
+4. **Evaluation**: Silhouette scores were used to evaluate the number of clusters.
+
+## Key Findings
+Two distinct clusters were identified, providing potential insights into different ALS patient groups based on disease progression.
+
+## Tools & Technologies Used
+- Python (Jupyter Notebooks)
+- Libraries: pandas, scikit-learn, matplotlib
+
+## Instructions for Use
+1. Clone the repository.
+2. Run the Jupyter Notebooks under the `ALS Clustering` folder.
