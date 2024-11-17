@@ -2,62 +2,132 @@
 <head> 
   <title>Kenn Wade - Data Science Portfolio</title>
   <style>
+    /* General Styles */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f0f4f8;
       color: #333;
+      line-height: 1.6;
     }
-    h1, h2 {
+
+    /* Container Styles */
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header Styles */
+    h1 {
+      color: #1e90ff;
+      font-size: 2.5em;
       text-align: center;
-      margin: 20px 0;
+      margin-bottom: 10px;
     }
+
+    h2 {
+      color: #333;
+      font-size: 1.8em;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    /* Paragraph Styles */
     p {
       text-align: center;
       margin: 10px 0;
+      font-size: 1.1em;
     }
-    ul {
-      list-style-type: none;
-      padding: 0;
-      text-align: center;
-    }
-    li {
-      margin: 10px 0;
-    }
+
+    /* Link Styles */
     a {
-      text-decoration: none;
       color: #1e90ff;
+      text-decoration: none;
+      font-weight: bold;
     }
     a:hover {
       color: #ff6347;
     }
-    .container {
-      width: 80%;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: white;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    /* Project List */
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    li {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+
+    /* Button Styling (Optional) */
+    .button {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #1e90ff;
+      color: white;
+      text-decoration: none;
+      font-size: 1em;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #ff6347;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+      color: #777;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <!-- Header -->
     <h1>Kenn Wade's Data Science Portfolio</h1>
     
+    <!-- About Me Section -->
     <h2>About Me</h2>
     <p>
-      I am a Data Scientist with a specialization in predictive modeling, machine learning, and data visualization. My passion lies in utilizing data science techniques to drive innovation within the hospitality industry.
+      I am a Data Scientist with expertise in predictive modeling, machine learning, and data visualization. 
+      Skilled in Python, R, SQL, Tableau, and Jupyter Notebook, I specialize in solving complex problems with 
+      data-driven insights. My passion lies in innovating within the hospitality industry and exploring 
+      cybersecurity solutions such as predictive threat detection and secure system analysis.
     </p>
 
+    <!-- Projects Section -->
     <h2>Projects</h2>
     <ul>
       <li><a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/ALS-Patient-Clustering">Project 1: ALS-Patient Clustering</a></li>
       <li><a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/Global-CO2-Emissions-Forecasting">Project 2: Global CO2 Emissions Forecasting</a></li>
       <li><a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/Indonesia-Tourism-Destination">Project 3: Indonesia Tourism Destination Analysis</a></li>
-      <!-- Add more project links here -->
+      <li><a href="#">Project 4: Placeholder for New Project</a></li>
+      <li><a href="#">Project 5: Placeholder for New Project</a></li>
+      <li><a href="#">Project 6: Placeholder for New Project</a></li>
+      <li><a href="#">Project 7: Placeholder for New Project</a></li>
+      <li><a href="#">Project 8: Placeholder for New Project</a></li>
+      <li><a href="#">Project 9: Placeholder for New Project</a></li>
+      <li><a href="#">Project 10: Placeholder for New Project</a></li>
     </ul>
 
+    <!-- Button to GitHub -->
+    <a href="https://github.com/kennwade/Data-Science-Portfolio" class="button">View All Projects on GitHub</a>
+
+    <!-- Contact Section -->
     <h2>Contact</h2>
     <p>
       LinkedIn: <a href="https://linkedin.com/in/thekennwade">Kenn Wade</a>
@@ -66,5 +136,10 @@
       Email: <a href="mailto:kpbwade1@gmail.com">kpbwade1@gmail.com</a>
     </p>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 Kenn Wade. All rights reserved.
+  </footer>
 </body>
 </html>
