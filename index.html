@@ -23,89 +23,101 @@
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
-    /* Header Styles */
-    h1 {
-      color: #1e90ff;
-      font-size: 2.8em;
-      text-align: center;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    h2 {
-      color: #333;
-      font-size: 2em;
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    /* Paragraph Styles */
-    p {
-      text-align: center;
-      margin: 10px 0;
-      font-size: 1.1em;
-      color: #444;
-    }
-
-    /* Link Styles */
-    a {
-      color: #1e90ff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease-in-out;
-    }
-    a:hover {
-      color: #ff6347;
-    }
-
-    /* Project List */
-    ul {
-      list-style: none;
-      padding: 0;
-      text-align: center;
-    }
-
-    li {
-      margin: 12px 0;
-      font-size: 1.3em;
-    }
-
-    /* Button Styling */
-    .button {
-      display: inline-block;
-      margin: 30px auto;
-      padding: 12px 24px;
-      background-color: #1e90ff;
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to right, #1e90ff, #00c6ff);
       color: white;
-      text-decoration: none;
-      font-size: 1.1em;
-      border-radius: 8px;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-      transition: background-color 0.3s ease, transform 0.2s ease;
+      text-align: center;
+      padding: 60px 20px;
+      margin-bottom: 40px;
     }
 
-    .button:hover {
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin: 10px 0 0;
+    }
+
+    /* Section Dividers */
+    .section {
+      padding: 40px 20px;
+      margin: 20px 0;
+      background-color: #f8f9fa; /* Light gray */
+      border-radius: 8px;
+    }
+
+    /* Project Cards */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .project-card h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+
+    .project-card .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      color: white;
+      background-color: #1e90ff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .project-card .btn:hover {
       background-color: #ff6347;
-      transform: scale(1.05);
     }
 
     /* Footer */
     footer {
+      background: #333;
+      color: white;
       text-align: center;
-      padding: 15px 0;
-      margin-top: 30px;
-      color: #f8f8f8;
-      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
       font-size: 0.9em;
+    }
+
+    footer .social-icons a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer .social-icons a:hover {
+      color: #1e90ff;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Header -->
-    <h1>Kenn Wade's Data Science Portfolio</h1>
-    
-    <!-- About Me Section -->
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Kenn Wade</h1>
+    <p>Data Scientist | Innovator | Problem Solver</p>
+  </div>
+  
+  <!-- About Me Section -->
+  <div class="container section">
     <h2>About Me</h2>
     <p>
       I am a Data Scientist with expertise in predictive modeling, machine learning, and data visualization. 
@@ -113,26 +125,47 @@
       data-driven insights. My passion lies in innovating within the hospitality industry and exploring 
       cybersecurity solutions such as predictive threat detection and secure system analysis.
     </p>
+  </div>
 
-    <!-- Projects Section -->
+  <!-- Projects Section -->
+  <div class="container section">
     <h2>Projects</h2>
-    <ul>
-      <li><a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/ALS-Patient-Clustering">Project 1: ALS-Patient Clustering</a></li>
-      <li><a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/Global-CO2-Emissions-Forecasting">Project 2: Global CO2 Emissions Forecasting</a></li>
-      <li><a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/Indonesia-Tourism-Destination">Project 3: Indonesia Tourism Destination Analysis</a></li>
-      <li><a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/MLB-Attendance">Project 4: Using Data to Improve MLB Attendance</a></li>
-      <li><a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/Movie-Recommender-System">Project 5: Movie Recommender System</a></li>
-      <li><a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/Predictive-Modeling-Guest-Satisfaction">Project 6: Predictive Modeling Guest Satisfaction</a></li>
-      <li><a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/SQLite-Database-Creation-and-Queries">Project 7: SQLite Database Creation and Queries</a></li>
-      <li><a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/US-Housing-Market-Cleaning">Project 8: US Housing Market Cleaning</a></li>
-      <li><a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/US-Retail-Sales-Time-Series">Project 9: US Retail Sales Time Series</a></li>
-      <li><a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/Video-Game-Sales-Analysis">Project 10: Video Game Sales Analysis</a></li>
-    </ul>
+    <div class="projects">
+      <div class="project-card">
+        <h3>ALS-Patient Clustering</h3>
+        <p>Identifying patterns in disease progression using clustering and PCA.</p>
+        <a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/ALS-Patient-Clustering" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Global CO2 Emissions Forecasting</h3>
+        <p>Predicting global CO2 emissions using time series forecasting models.</p>
+        <a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/Global-CO2-Emissions-Forecasting" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Indonesia Tourism Destination Analysis</h3>
+        <p>Analyzing popular destinations to guide tourism strategies.</p>
+        <a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/Indonesia-Tourism-Destination" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Using Data to Improve MLB Attendance</h3>
+        <p>Analyzing attendance trends and factors influencing MLB game attendance.</p>
+        <a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/MLB-Attendance" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Movie Recommender System</h3>
+        <p>Building a recommendation engine using collaborative filtering.</p>
+        <a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/Movie-Recommender-System" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Predictive Modeling Guest Satisfaction</h3>
+        <p>Improving guest satisfaction using machine learning models.</p>
+        <a href="https://github.com/kennwade/Data-Science-Portfolio/tree/main/Predictive-Modeling-Guest-Satisfaction" class="btn">View Project</a>
+      </div>
+    </div>
+  </div>
 
-    <!-- Button to GitHub -->
-    <a href="https://github.com/kennwade/Data-Science-Portfolio" class="button">View All Projects on GitHub</a>
-
-    <!-- Contact Section -->
+  <!-- Contact Section -->
+  <div class="container section">
     <h2>Contact</h2>
     <p>
       LinkedIn: <a href="https://linkedin.com/in/thekennwade">Kenn Wade</a>
@@ -144,7 +177,11 @@
 
   <!-- Footer -->
   <footer>
-    &copy; 2024 Kenn Wade. All rights reserved.
+    <p>&copy; 2024 Kenn Wade</p>
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/thekennwade">LinkedIn</a>
+      <a href="mailto:kpbwade1@gmail.com">Email</a>
+    </div>
   </footer>
 </body>
 </html>
